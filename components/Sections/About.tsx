@@ -30,13 +30,14 @@ const skills = {
 
 export default function About() {
   return (
+
     <motion.section
-      id="about"
+    id="about" className="max-w-5xl mx-auto px-4 md:px-0 py-12"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="max-w-5xl mx-auto px-4 md:px-0 py-12"
+      
     >
       <h2 className="text-4xl font-bold mb-8 text-center relative inline-block after:absolute after:-bottom-2 after:left-0 after:w-20 after:h-1 after:bg-blue-600 after:rounded-md">
         About Me
@@ -74,5 +75,6 @@ export default function About() {
         </div>
       </div>
     </motion.section>
+
   );
 }
